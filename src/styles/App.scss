@@ -1,0 +1,39 @@
+@use './defaults.scss' as def; 
+
+/* HERO VIDEO */
+
+.hero {
+  width: 100%; 
+}
+
+/* BIO */
+
+.bio {
+  @include def.fonts; 
+  
+  padding: 2rem; 
+  
+  .headline {
+    @include def.headline-font; 
+    
+    padding: 2em 0; 
+  }
+  
+  .copy {
+    font-size: 1rem; 
+    color: #AAA; 
+  }
+  
+}
+
+/* PROJECTS */
+
+/* FOOTER */
+
+.footer {
+  @include def.fonts; 
+
+  .headline {
+    @include def.headline-font; 
+  }
+}

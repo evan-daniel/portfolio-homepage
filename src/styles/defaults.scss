@@ -1,0 +1,12 @@
+// FONTS 
+
+@mixin fonts {
+    text-align: center; 
+    color: #AAA; 
+}
+
+@mixin headline-font {
+    font-size: 2rem; 
+    color: #666; 
+    line-height: 1.6; 
+}

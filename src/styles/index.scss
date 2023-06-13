@@ -1,0 +1,33 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap');
+
+/* GLOBAL */
+
+:root {
+  box-sizing: border-box; 
+}
+
+::before, 
+*, 
+::after {
+  box-sizing: inherit; 
+  margin: 0; 
+  padding: 0; 
+  
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  outline: none; 
+}
+
+body {
+  font-family: 'Futura', sans-serif; 
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace; 
+  font-family: 'DM Mono', 'Menlo', 'Monaco', 'Courier New', monospace; 
+}
+
+a {
+  text-decoration: none; 
+  color: unset; 
+}
