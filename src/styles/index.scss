@@ -18,7 +18,8 @@
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
-  outline: none; 
+  object-fit: cover;
+  object-position: center;
 }
 
 body {
@@ -29,5 +30,6 @@ body {
 
 a {
   text-decoration: none; 
-  color: unset; 
+  color: #00F; 
+  font-weight: 900; 
 }

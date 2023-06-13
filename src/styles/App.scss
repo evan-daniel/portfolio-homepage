@@ -4,6 +4,10 @@
 
 .hero {
   width: 100%; 
+
+  box-shadow: 0 0 50px #000A; 
+  border-bottom-left-radius: 50vw; 
+  border-bottom-right-radius: 50vw; 
 }
 
 /* BIO */
@@ -11,16 +15,40 @@
 .bio {
   @include def.fonts; 
   
-  padding: 2rem; 
+  margin: 4rem; 
+
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
   
   .headline {
     @include def.headline-font; 
     
-    padding: 2em 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+
+    .word {
+      width: 50%; 
+    }
+
+    .word:nth-of-type(2n + 1) {
+      padding: 0 1ch 0 0; 
+      
+      text-align: right; 
+    }
+    
+    .word:nth-of-type(2n) {
+      padding: 0 0 0 1ch; 
+      
+      text-align: left; 
+    }
   }
   
   .copy {
-    font-size: 1rem; 
+    max-width: 1024px; 
+    margin: 1.2rem 0 0; 
+    
+    font-size: 0.666rem; 
     color: #AAA; 
   }
   
@@ -28,10 +56,89 @@
 
 /* PROJECTS */
 
+.projects {
+
+  // text-align: center;
+  // display: grid; 
+  // grid-template-columns: 1fr 1fr 1fr;
+  // justify-items: center;
+
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+
+
+  .project {
+    margin: 25px; 
+    height: 450px; 
+    width: 450px; 
+  
+    overflow: hidden; 
+    // border: 6px solid #666; 
+    // border-radius: 50px; 
+    box-shadow: 0 0 25px #0002;
+  
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #AAF; 
+    
+    .title {
+      @include def.fonts; 
+      @include def.headline-font; 
+      
+      width: 100%; 
+      margin: 0.6rem 0; 
+  
+      font-size: 2.4rem; 
+      line-height: 1; 
+  
+    }
+  
+    .description {
+      @include def.fonts; 
+  
+      margin: 0 50px; 
+  
+      color: #FFF; 
+      font-size: 1rem; 
+    }
+  
+    .link {
+      // margin: 0 0 0.6em; 
+    }
+    
+    .image {
+      height: 200px; 
+      width: 200px; 
+      margin: 1.2rem; 
+  
+      background-color: #FFF; 
+      
+      object-position: top;
+      border-radius: 50vw; 
+      box-shadow: 0 0 32px #0006; 
+  
+    }
+  }
+  
+  // PROJECT NUMBER.GAMES 
+  
+  .project.numbergames {
+    .image {
+      // object-position: 0 -50px; 
+    }
+  }
+}
+
+
 /* FOOTER */
 
 .footer {
   @include def.fonts; 
+
+  margin: 8rem 0; 
 
   .headline {
     @include def.headline-font; 
