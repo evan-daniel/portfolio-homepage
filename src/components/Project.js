@@ -11,7 +11,7 @@ const Project = props => {
                 {props.link && 
                     <a href={ props.link } className="link">link</a>
                 }
-                <a href={ props.pdf }>
+                <a className="image-link" href={ props.pdf }>
                     <img className="image" src={ Object.values(props.img)[0] } />
                 </a>
             </div>

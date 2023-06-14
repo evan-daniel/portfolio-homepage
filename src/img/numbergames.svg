@@ -2,9 +2,11 @@
     <g stroke-width="0.05" stroke="#000" fill="transparent">
         <g transform="translate(0, -0.01)">
             <g>
-                <circle r="0.1" cx="0.2" cy="0.5" fill="none" />
+                <!-- <circle r="0.1" cx="0.2" cy="0.5" fill="none" />
                 <circle r="0.1" cx="0.2" cy="0.7" fill="none" />
-                <rect x="0.05" y="0.5" width="0.15" height="0.2" fill="#fff" stroke="none" />
+                <rect x="0.05" y="0.5" width="0.15" height="0.2" fill="#fff" stroke="none" /> -->
+                <path d="M 0.2 0.6, A 0.1 0.1 0 1 0 0.1 0.5" fill="none" />
+                <path d="M 0.1 0.7, A 0.1 0.1 0 1 0 0.2 0.6" fill="none" />
 
                 <animateTransform
                     attributeName="transform"

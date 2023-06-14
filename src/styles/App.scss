@@ -32,13 +32,13 @@
     }
 
     .word:nth-of-type(2n + 1) {
-      padding: 0 1ch 0 0; 
+      padding: 0 0.5ch 0 0; 
       
       text-align: right; 
     }
     
     .word:nth-of-type(2n) {
-      padding: 0 0 0 1ch; 
+      padding: 0 0 0 0.5ch; 
       
       text-align: left; 
     }
@@ -57,16 +57,9 @@
 /* PROJECTS */
 
 .projects {
-
-  // text-align: center;
-  // display: grid; 
-  // grid-template-columns: 1fr 1fr 1fr;
-  // justify-items: center;
-
   display: flex; 
   flex-wrap: wrap; 
   justify-content: space-around; 
-
 
   .project {
     margin: 25px; 
@@ -74,15 +67,13 @@
     width: 450px; 
   
     overflow: hidden; 
-    // border: 6px solid #666; 
-    // border-radius: 50px; 
-    box-shadow: 0 0 25px #0002;
+    // box-shadow: 0 0 25px #0002;
   
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    background-color: #AAF; 
+    // background-color: #AAF; 
     
     .title {
       @include def.fonts; 
@@ -101,33 +92,75 @@
   
       margin: 0 50px; 
   
-      color: #FFF; 
+      // color: #FFF; 
       font-size: 1rem; 
     }
   
-    .link {
-      // margin: 0 0 0.6em; 
+    .image-link {
+      border-radius: 50vw; 
     }
     
     .image {
-      height: 200px; 
-      width: 200px; 
+      position: relative; 
+      height: 220px; 
+      width: 220px; 
       margin: 1.2rem; 
+      padding: 11px; 
   
-      background-color: #FFF; 
-      
       object-position: top;
       border-radius: 50vw; 
-      box-shadow: 0 0 32px #0006; 
-  
+      
+      --bg: #FFF; 
+      --bg1: #FFF; 
+      --c: #333; 
+      --c1: #BBB0; 
+      --c2: #666; 
+      --bp: 90%; 
+      --bp1: 93.333%; 
+      --bp2: 96.666%; 
+      --grad: radial-gradient(closest-side, var(--bg) 0, var(--bg1) var(--bp), var(--c) var(--bp), var(--c) var(--bp1), var(--c1) var(--bp1), var(--c1) var(--bp2), var(--c2) var(--bp2), var(--c2) 100%, #FFF0 100%); 
+      background-image: var(--grad); 
+      background-size: 100% 100%; 
+      transition: background-size 0.1666s linear, background-color 0.166s linear; 
     }
-  }
-  
-  // PROJECT NUMBER.GAMES 
-  
-  .project.numbergames {
-    .image {
-      // object-position: 0 -50px; 
+
+    @keyframes glimmer {
+      0% {
+        --c: #0F0; 
+        --c1: #FAA; 
+        --c2: #AAF; 
+        --bg1: #FFF; 
+      }
+      
+      50% {
+        --c: #F00; 
+        --c1: #AAF; 
+        --c2: #AFA; 
+        --bg1: #FFA; 
+      }
+      
+      100% {
+        --c: #00F; 
+        --c1: #FAA; 
+        --c2: #AAF; 
+        --bg1: #FFF;
+      }
+    }
+
+    @keyframes pulse{
+      from {
+        background-size:50% 50%;
+      }
+      to {
+        background-size:100% 100%;
+      }
+    }
+    
+    .image:hover {
+      background-size: 0 0;
+      background-color: #AFF; 
+      // animation: pulse 2s linear infinite alternate;
+
     }
   }
 }
