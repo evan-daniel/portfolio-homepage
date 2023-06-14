@@ -1,5 +1,16 @@
+
+// IMAGES 
+
 import number_games from './img/numbergames.svg'; 
-import lociai from './img/LociAi_Map_NoBorder.png'; 
+import lociai from './img/LociAi.png'; 
+import mnemonic_exercises from './img/MnemonicExercises.png'; 
+import feedback from './img/Feedback.png'; 
+// import encoding from './img/EvanDaniel_2022_PiCirclesMonochrome_Small.png'; 
+import encoding from './img/Encoding.png'; 
+import take_a_number from './img/TakeANumber.jpg';
+import pixels from './img/EvanDaniel_2014_Breakthrough_Small.png'; 
+
+// HOMEPAGE PROJECT SOURCE OF TRUTH 
 
 const projects = [
     {
@@ -23,21 +34,21 @@ const projects = [
         slug: 'networks', 
         pdf: 'https://evandaniel.com/recitation_and_networks', 
         description: 'Experiments reciting π over networks', 
-        img: { lociai }, 
+        img: { mnemonic_exercises }, 
     }, 
     {
         title: 'Numeric Feedback', 
         slug: 'feedback', 
         pdf: 'https://evandaniel.com/numeric_feedback', 
         description: 'Speculative feedback systems', 
-        img: { lociai }, 
+        img: { feedback }, 
     }, 
     {
         title: 'Encoding Numbers', 
         slug: 'encoding', 
         pdf: 'https://evandaniel.com/encoding_numbers', 
         description: 'Performative data visualization', 
-        img: { lociai }, 
+        img: { encoding }, 
     }, 
     {
         title: 'Take a Number', 
@@ -45,14 +56,14 @@ const projects = [
         pdf: 'https://evandaniel.com/take_a_number', 
         link: 'https://take-a-number.evandaniel.com/', 
         description: 'I recited π to 10,000 digits by sculpting marble', 
-        img: { lociai }, 
+        img: { take_a_number }, 
     }, 
     {
         title: 'Pi-xels', 
         slug: 'pixels', 
         pdf: 'https://evandaniel.com/pi-xels', 
         description: 'Reciting π from memory to draw and paint', 
-        img: { lociai }, 
+        img: { pixels }, 
     }, 
     {
         title: 'Memorization and Text', 
@@ -84,7 +95,7 @@ const projects = [
         img: { lociai }, 
     }, 
     {
-        title: 'Illustrations for Smokey Robotic', 
+        title: 'Illustrations', 
         slug: 'smokeyrobotic', 
         pdf: 'https://evandaniel.com/illustrations_for_smokey_robotic', 
         description: 'Naturalistic paintings and drawings a band named after a bear', 

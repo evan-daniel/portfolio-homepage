@@ -16,10 +16,10 @@ function App() {
         <div className="headline">
           <span className="word">evan</span>
           <span className="word">daniel</span>
-          <span className="word">explores</span>
-          <span className="word">knowledge</span>
-          <span className="word">through</span>
-          <span className="word">media</span>
+          <span className="word">recites</span>
+          <span className="word">π</span>
+          <span className="word">from</span>
+          <span className="word">memory</span>
         </div>
         
         <div className="copy">
