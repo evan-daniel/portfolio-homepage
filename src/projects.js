@@ -7,7 +7,7 @@ import mnemonic_exercises from './img/EvanDaniel_MnemonicExercises.png';
 import feedback from './img/Feedback.png'; 
 // import encoding from './img/EvanDaniel_2022_PiCirclesMonochrome_Small.png'; 
 import encoding from './img/Encoding.png'; 
-import take_a_number from './img/TakeANumber.jpg'; 
+import take_a_number from './img/TakeANumber_Silhouette.png'; 
 import pixels from './img/EvanDaniel_2014_Breakthrough_Small.png'; 
 import writingpi from './img/EvanDaniel_Cymbal.png'; 
 import memorizationtext from './img/evandaniel_2014_rememberingmichaelbrown.jpg'; 
@@ -93,7 +93,7 @@ const projects = [
         img: { memorizationtext }, 
     }, 
     {
-        title: 'Writing π on Art', 
+        title: 'Writing π from Memory', 
         slug: 'writingpi', 
         pdf: 'https://evandaniel.com/writing_numbers_from_memory', 
         description: 'The art of reciting π from memory', 
