@@ -3,12 +3,17 @@
 
 import number_games from './img/numbergames.svg'; 
 import lociai from './img/LociAi.png'; 
-import mnemonic_exercises from './img/MnemonicExercises.png'; 
+import mnemonic_exercises from './img/EvanDaniel_MnemonicExercises.png'; 
 import feedback from './img/Feedback.png'; 
 // import encoding from './img/EvanDaniel_2022_PiCirclesMonochrome_Small.png'; 
 import encoding from './img/Encoding.png'; 
-import take_a_number from './img/TakeANumber.jpg';
+import take_a_number from './img/TakeANumber.jpg'; 
 import pixels from './img/EvanDaniel_2014_Breakthrough_Small.png'; 
+import writingpi from './img/EvanDaniel_Cymbal.png'; 
+import memorizationtext from './img/evandaniel_2014_rememberingmichaelbrown.jpg'; 
+import mansplane from './img/EvanDaniel_Mansplaner.gif'; 
+import cubism from './img/EvanDaniel_ScreamingMonster_Medium.png'; 
+import illustrations from './img/EvanDaniel_RazorsAndBalloons.png'; 
 
 // HOMEPAGE PROJECT SOURCE OF TRUTH 
 
@@ -70,14 +75,14 @@ const projects = [
         slug: 'memorizationtext', 
         pdf: 'https://evandaniel.com/memorization_and_text', 
         description: 'Philosophical investigations into text and memory', 
-        img: { lociai }, 
+        img: { memorizationtext }, 
     }, 
     {
         title: 'Reciting π as Art', 
         slug: 'writingpi', 
         pdf: 'https://evandaniel.com/writing_numbers_from_memory', 
         description: 'The art of reciting π from memory', 
-        img: { lociai }, 
+        img: { writingpi }, 
     }, 
     {
         title: 'The Man\'s Plane', 
@@ -85,21 +90,21 @@ const projects = [
         pdf: 'https://evandaniel.com/mans_plane', 
         link: 'https://mansplane.com/', 
         description: 'Critique of mansplaining (alpha release)', 
-        img: { lociai }, 
+        img: { mansplane }, 
     }, 
     {
         title: 'Cubist Paintings', 
         slug: 'cubism', 
         pdf: 'https://evandaniel.com/cubist_paintings', 
         description: 'Paintings exploring formal representation', 
-        img: { lociai }, 
+        img: { cubism }, 
     }, 
     {
         title: 'Illustrations', 
-        slug: 'smokeyrobotic', 
+        slug: 'illustrations', 
         pdf: 'https://evandaniel.com/illustrations_for_smokey_robotic', 
-        description: 'Naturalistic paintings and drawings a band named after a bear', 
-        img: { lociai }, 
+        description: 'Naturalistic paintings and drawings for commercial use', 
+        img: { illustrations }, 
     }, 
 ]
 
