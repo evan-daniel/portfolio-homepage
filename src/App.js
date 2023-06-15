@@ -4,7 +4,7 @@ import Project from './components/Project';
 
 import projects from './projects'; 
 
-import hero from './img/Evan-Daniel_Take-A-Number.gif'; 
+import hero from './img/TakeANumber.gif'; 
 
 function App() {
   return (
@@ -13,18 +13,26 @@ function App() {
       <img className="hero" src={ hero } />
       
       <div className="bio">
-        <div className="headline">
+        {/* <div className="headline">
           <span className="word">evan</span>
           <span className="word">daniel</span>
           <span className="word">recites</span>
           <span className="word">π</span>
           <span className="word">from</span>
           <span className="word">memory</span>
+        </div> */}
+
+        <div className="headline">
+          <span className="word">evan</span>
+          <span className="word">daniel</span>
+          <span className="word">explores</span>
+          <span className="word">knowledge</span>
+          <span className="word">through</span>
+          <span className="word">media</span>
         </div>
         
         <div className="copy">
-          The foundation of my artistic practice is an inquiry into the concept of knowledge.  Knowledge is a central experience in our personal and social lives.  I would argue that its primacy as a philosophical topic stems from philosophers' tendency to see it as a source of meaning.  Knowledge has long driven inquiry within aesthetics and the theory of art, and it has informed design in fields such as data visualization, attention, and perceptual organization.  
-          My practice as a whole is informed by a longstanding activity in my life, the memorization of π.  I have memorized ten thousand digits of π, and I have been practicing them for over a decade.  This skill is a central voice in both my design and fine arts work.  In the former, I use myself as a test subject, tasking myself with reciting π in ways that reveal the core psychological mechanisms at work.  In the latter, I recite π as a performative act, with each performance becoming a game in which the outcome attempts to be a significant visualization.  
+          Evan Daniel is a media artist who specializes in educational technology, data visualization, and game and interaction design.  He has degrees in Digital Media and Painting from RISD, where his MFA thesis research focused on the philosophical and psychological interpretation of numerical knowledge.  His work often leverages tools related to web, game, and software development; design, media, and video; and fine art.  His practice is informed by his memorization of the number π to ten thousand digits, a skill that he has continued to rehearse for over a decade.  When π is present in his work, it is always recited from memory.  His work has been featured in The Guardian, Core77, and on Intel's Facebook page.  
         </div>
       </div>
 
