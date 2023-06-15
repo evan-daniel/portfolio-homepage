@@ -1,0 +1,22 @@
+/* GLOBAL */
+
+:root {
+    box-sizing: border-box;
+}
+
+::before, 
+*, 
+::after {
+    box-sizing: inherit; 
+    margin: 0; 
+    padding: 0; 
+}
+
+/* PDF */
+
+iframe {
+    height: 100vh; 
+    width: 100vw; 
+
+    outline: none; 
+}
