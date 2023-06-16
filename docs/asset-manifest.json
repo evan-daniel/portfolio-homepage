@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e28b8867.css",
-    "main.js": "/static/js/main.cc3c28a4.js",
+    "main.css": "/static/css/main.3dbe7389.css",
+    "main.js": "/static/js/main.90dea0bb.js",
     "static/js/787.8702e53f.chunk.js": "/static/js/787.8702e53f.chunk.js",
     "static/media/TakeANumber.gif": "/static/media/TakeANumber.bf0fd6070e216fbc1fe2.gif",
     "static/media/Encoding.png": "/static/media/Encoding.d7f9e39a93a1f0fae433.png",
@@ -16,12 +16,12 @@
     "static/media/EvanDaniel_Mansplaner.gif": "/static/media/EvanDaniel_Mansplaner.84cebdd4eb94c764a25f.gif",
     "static/media/numbergames.svg": "/static/media/numbergames.96537e39328e27ce75bc937a6623839f.svg",
     "index.html": "/index.html",
-    "main.e28b8867.css.map": "/static/css/main.e28b8867.css.map",
-    "main.cc3c28a4.js.map": "/static/js/main.cc3c28a4.js.map",
+    "main.3dbe7389.css.map": "/static/css/main.3dbe7389.css.map",
+    "main.90dea0bb.js.map": "/static/js/main.90dea0bb.js.map",
     "787.8702e53f.chunk.js.map": "/static/js/787.8702e53f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e28b8867.css",
-    "static/js/main.cc3c28a4.js"
+    "static/css/main.3dbe7389.css",
+    "static/js/main.90dea0bb.js"
   ]
 }
