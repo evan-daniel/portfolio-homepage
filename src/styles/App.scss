@@ -57,6 +57,7 @@
 /* PROJECTS */
 
 .projects {
+
   display: flex; 
   flex-wrap: wrap; 
   justify-content: space-around; 
@@ -65,550 +66,189 @@
   --border-color: #664D4D; 
 
   .project {
-    position: relative; 
-    margin: 25px 0; 
-    height: 450px; 
     width: 450px; 
-    overflow: hidden; 
+    margin: 25px; 
 
-    border: var(--border-width) solid var(--border-color); 
-    border-radius: 100vw; 
-    transition: 0.333s box-shadow; 
-
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-
-    .lunette {
-      z-index: 0; 
-      height: 225px; 
-      width: 450px; 
-      
-      background-color: #FFF; 
-      
-      border-bottom: var(--border-width) solid var(--border-color); 
-      border-top-left-radius: 100vw; 
-      border-top-right-radius: 100vw; 
-
+    > .aspect {
+      position: relative; 
+      width: 100%; 
+      padding-bottom: 100%; 
+      overflow: hidden; 
+  
+      outline: var(--border-width) solid var(--border-color); 
+      border-radius: 100vw; 
+      transition: 0.333s box-shadow; 
+  
       display: flex; 
       flex-direction: column; 
-      justify-content: flex-end; 
+      justify-content: flex-start; 
       align-items: center; 
+  
+      .lunette {
+        position: absolute; 
+        width: 100%; 
+        height: calc(50% - var(--border-width) / 2); 
+        
+        background-color: #FFF; 
+        
+        outline: var(--border-width) solid var(--border-color); 
+        border-top-left-radius: 100vw; 
+        border-top-right-radius: 100vw; 
+  
+        display: flex; 
+        flex-direction: column; 
+        justify-content: flex-end; 
+        align-items: center; 
+
+        .description {
+          @include def.fonts; 
+          width: 250px; 
+        }
+        
+        .title {
+          @include def.fonts; 
+          @include def.headline-font; 
+          
+          font-size: 1.6rem; 
+          line-height: 1; 
+          text-align: center; 
+        }
+
+        .links {
+          margin: 0 0 0.6em; 
+        }
+      }
+      
+      .image {
+        position: absolute; 
+        bottom: 0; 
+        left: 0;
+        height: 100%; 
+        width: 100%;  
+    
+        object-position: bottom;
+        object-fit: contain; 
+      }
     }
     
-    .description {
-      @include def.fonts; 
-      flex: 1 0 225px; 
-      width: 300px; 
-  
-      font-size: 1rem; 
-
-      border-top-left-radius: 100vw; 
-      border-top-right-radius: 100vw; 
-
-      display: flex; 
-      justify-content: center; 
-      align-items: flex-end; 
-    }
-    
-    .title {
-      @include def.fonts; 
-      @include def.headline-font; 
-      margin: 0.6rem 0; 
-      
-      font-size: 2.4rem; 
-      line-height: 1; 
-      text-align: center; 
-    }
-  
-    .image {
-      position: absolute; 
-      right: 0; 
-      bottom: 0; 
-      left: 0; 
-      height: 100%; 
-      width: 100%; 
-  
-      object-position: bottom;
-      object-fit: contain; 
+    > .aspect:hover {
+      animation: 0.333s rainbow 2 alternate; 
+      box-shadow: 0 0 25px #655; 
     }
   }
-
-}
-
-// PROJECT ANIMATION 
-
-@keyframes rainbow {
-  0% {
-    background-image: radial-gradient(closest-side, 
-      
-    #FFF0
-      0%, 
-      #FFF0 
-      100%, 
-    ); 
-  }
-
-  10% {
-    background-image: radial-gradient(closest-side, 
-      #FF0 
-      0, 
-      #FF0 
-      10%, 
-      
-    #FFF0
-      10%, 
-      #FFF0 
-      100%, 
-    ); 
-  }
-
-  20% {
-    background-image: radial-gradient(closest-side, 
-      #FF0 
-      0, 
-      #FF0 
-      10%, 
-      
-      #FAF 
-      10%, 
-      #FAF 
-      20%, 
-      
-    #FFF0
-      20%, 
-      #FFF0 
-      100%, 
-    ); 
-  }
-
-  30% {
-    background-image: radial-gradient(closest-side, 
-      #FF0 
-      0, 
-      #FF0 
-      10%, 
-      
-      #FAF 
-      10%, 
-      #FAF 
-      20%, 
-      
-      #00F 
-      20%, 
-      #00F 
-      30%, 
-      
-    #FFF0
-      30%, 
-      #FFF0 
-      100%, 
-    ); 
-  }
-
-  40% {
-    background-image: radial-gradient(closest-side, 
-      #FF0 
-      0, 
-      #FF0 
-      10%, 
-      
-      #FAF 
-      10%, 
-      #FAF 
-      20%, 
-      
-      #00F 
-      20%, 
-      #00F 
-      30%, 
-      
-      #0FA 
-      30%, 
-      #0FA 
-      40%, 
-      
-    #FFF0
-      40%, 
-      #FFF0 
-      100%, 
-    ); 
-  }
-
-  50% {
-    background-image: radial-gradient(closest-side, 
-      #FF0 
-      0, 
-      #FF0 
-      10%, 
-      
-      #FAF 
-      10%, 
-      #FAF 
-      20%, 
-      
-      #00F 
-      20%, 
-      #00F 
-      30%, 
-      
-      #0FA 
-      30%, 
-      #0FA 
-      40%, 
-      
-      #FAA 
-      40%,
-      #FAA 
-      50%, 
-      
-    #FFF0
-      50%, 
-      #FFF0 
-      100%, 
-    ); 
-  }
-
-  60% {
-    background-image: radial-gradient(closest-side, 
-      #FF0 
-      0, 
-      #FF0 
-      10%, 
-      
-      #FAF 
-      10%, 
-      #FAF 
-      20%, 
-      
-      #00F 
-      20%, 
-      #00F 
-      30%, 
-      
-      #0FA 
-      30%, 
-      #0FA 
-      40%, 
-      
-      #FAA 
-      40%,
-      #FAA 
-      50%, 
-      
-      #0AF 
-      50%, 
-      #0AF 
-      60%, 
-      
-    #FFF0
-      60%, 
-      #FFF0 
-      100%, 
-    ); 
-  }
-
-  70% {
-    background-image: radial-gradient(closest-side, 
-      #FF0 
-      0, 
-      #FF0 
-      10%, 
-      
-      #FAF 
-      10%, 
-      #FAF 
-      20%, 
-      
-      #00F 
-      20%, 
-      #00F 
-      30%, 
-      
-      #0FA 
-      30%, 
-      #0FA 
-      40%, 
-      
-      #FAA 
-      40%,
-      #FAA 
-      50%, 
-      
-      #0AF 
-      50%, 
-      #0AF 
-      60%, 
-      
-      #AF0 
-      60%, 
-      #AF0 
-      70%, 
-      
-    #FFF0
-      70%, 
-      #FFF0 
-      100%, 
-    ); 
-  }
-
-  80% {
-    background-image: radial-gradient(closest-side, 
-      #FF0 
-      0, 
-      #FF0 
-      10%, 
-      
-      #FAF 
-      10%, 
-      #FAF 
-      20%, 
-      
-      #00F 
-      20%, 
-      #00F 
-      30%, 
-      
-      #0FA 
-      30%, 
-      #0FA 
-      40%, 
-      
-      #FAA 
-      40%,
-      #FAA 
-      50%, 
-      
-      #0AF 
-      50%, 
-      #0AF 
-      60%, 
-      
-      #AF0 
-      60%, 
-      #AF0 
-      70%, 
-      
-      #FA0 
-      70%, 
-      #FA0 
-      80%, 
-      
-    #FFF0
-      80%, 
-      #FFF0 
-      100%, 
-    ); 
-  }
-   
-  90% {
-    background-image: radial-gradient(closest-side, 
-      #FF0 
-      0, 
-      #FF0 
-      10%, 
-      
-      #FAF 
-      10%, 
-      #FAF 
-      20%, 
-      
-      #00F 
-      20%, 
-      #00F 
-      30%, 
-      
-      #0FA 
-      30%, 
-      #0FA 
-      40%, 
-      
-      #FAA 
-      40%,
-      #FAA 
-      50%, 
-      
-      #0AF 
-      50%, 
-      #0AF 
-      60%, 
-      
-      #AF0 
-      60%, 
-      #AF0 
-      70%, 
-      
-      #FA0 
-      70%, 
-      #FA0 
-      80%, 
-      
-      #0F0 
-      80%, 
-      #0F0 
-      90%, 
-      
-    #FFF0
-      90%, 
-      #FFF0 
-      100%, 
-     ); 
-   }
-
-  100% {
-    background: radial-gradient(closest-side, 
-      #FF0 
-      0, 
-      #FF0 
-      10%, 
-      
-      #FAF 
-      10%, 
-      #FAF 
-      20%, 
-      
-      #00F 
-      20%, 
-      #00F 
-      30%, 
-      
-      #0FA 
-      30%, 
-      #0FA 
-      40%, 
-      
-      #FAA 
-      40%,
-      #FAA 
-      50%, 
-      
-      #0AF 
-      50%, 
-      #0AF 
-      60%, 
-      
-      #AF0 
-      60%, 
-      #AF0 
-      70%, 
-      
-      #FA0 
-      70%, 
-      #FA0 
-      80%, 
-      
-      #0F0 
-      80%, 
-      #0F0 
-      90%, 
-      
-      #A0F
-      90%, 
-      #A0F 
-      100%, 
-    ); 
-   }
-}
-
-.project:hover {
-  animation: 0.333s rainbow 2 alternate; 
-  box-shadow: 0 0 25px #655; 
 }
 
 // PROJECT OVERRIDES 
 
 .project.lociai {
-  .image {
-    height: 225px; 
-
-    object-fit: contain; 
-    // object-fit: cover; 
-    object-position: bottom; 
+  .aspect {
+    .image {
+      height: 50%; 
+  
+      object-fit: contain; 
+      object-position: bottom; 
+    }
   }
 }
 
 .project.numbergames {
-  .image {
-    height: 225px; 
-
-    object-fit: contain; 
+  .aspect {
+    .image {
+      height: 50%; 
+      
+      object-fit: contain; 
+    }
   }
 }
 
 .project.encoding {
-  .image {
-    height: 225px; 
+  .aspect {
+    .image {
+      height: 50%; 
 
-    object-position: 0 10px; 
-    object-fit: cover; 
+      object-fit: cover; 
+    }
   }
 }
 
 .project.mansplane {
-  .image {
-    height: 225px; 
-
-    object-fit: contain; 
+  .aspect {
+    .image {
+      height: 50%; 
+  
+      object-fit: contain; 
+    }
   }
 }
 
 .project.cubism {
-  .image {
-    height: 225px; 
-
-    object-fit: cover; 
-    object-position: top; 
+  .aspect {
+    .image {
+      height: 50%; 
+  
+      object-fit: cover; 
+      object-position: top; 
+    }
   }
 }
 
 .project.cubism {
-  .image {
-    height: 225px; 
-
-    object-fit: cover; 
-    object-position: top; 
+  .aspect {
+    .image {
+      height: 50%; 
+  
+      object-fit: cover; 
+      object-position: top; 
+    }
   }
 }
 
 .project.networks {
-  .lunette {
-    height: 200px; 
-    
-    border: none; 
+  .aspect {
+    .lunette {
+      outline: none; 
+    }
   }
 }
 
 .project.pixels {
-  .image {
-    height: 225px; 
-
-    object-position: 0 -75px; 
-    object-fit: cover; 
+  .aspect {
+    .image {
+      height: 50%; 
+  
+      object-position: 0 50%; 
+      object-fit: cover; 
+    }
   }
 }
 
 .project.takeanumber {
-  .image {
-    height: 225px; 
-
-    object-fit: fill;
+  .aspect {
+    .image {
+      height: 50%; 
+  
+      object-fit: fill;
+    }
   }
 }
 
 .project.feedback {
-  .image {
-    object-position: -4px 11px; 
+  .aspect {
+    .image {
+      object-position: -4px 11px; 
+    }
   }
 }
 
 .project.memorizationtext {
-  .image {
-    height: 225px; 
-    width: 500px; 
-    
-    object-fit: cover; 
-    object-position: -25px -25px; 
+  .aspect {
+    .image {
+      height: 50%; 
+      width: 120%; 
+      
+      object-fit: cover; 
+      object-position: -25px 20%; 
+    }
   }
 }
 
@@ -616,10 +256,12 @@
 }
 
 .project.illustrations {
-  .image {
-    height: 225px; 
-    
-    object-position: 25px 25px; 
+  .aspect {
+    .image {
+      height: 50%; 
+      
+      object-position: 12.5% 0; 
+    }
   }
 }
 

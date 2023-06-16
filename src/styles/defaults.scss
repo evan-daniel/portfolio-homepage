@@ -9,3 +9,377 @@
     font-size: 2rem; 
     color: #655; 
 }
+
+// PROJECT ANIMATION 
+
+@keyframes rainbow {
+    0% {
+      background-image: radial-gradient(closest-side, 
+        
+      #FFF0
+        0%, 
+        #FFF0 
+        100%, 
+      ); 
+    }
+  
+    10% {
+      background-image: radial-gradient(closest-side, 
+        #FF0 
+        0, 
+        #FF0 
+        10%, 
+        
+      #FFF0
+        10%, 
+        #FFF0 
+        100%, 
+      ); 
+    }
+  
+    20% {
+      background-image: radial-gradient(closest-side, 
+        #FF0 
+        0, 
+        #FF0 
+        10%, 
+        
+        #FAF 
+        10%, 
+        #FAF 
+        20%, 
+        
+      #FFF0
+        20%, 
+        #FFF0 
+        100%, 
+      ); 
+    }
+  
+    30% {
+      background-image: radial-gradient(closest-side, 
+        #FF0 
+        0, 
+        #FF0 
+        10%, 
+        
+        #FAF 
+        10%, 
+        #FAF 
+        20%, 
+        
+        #00F 
+        20%, 
+        #00F 
+        30%, 
+        
+      #FFF0
+        30%, 
+        #FFF0 
+        100%, 
+      ); 
+    }
+  
+    40% {
+      background-image: radial-gradient(closest-side, 
+        #FF0 
+        0, 
+        #FF0 
+        10%, 
+        
+        #FAF 
+        10%, 
+        #FAF 
+        20%, 
+        
+        #00F 
+        20%, 
+        #00F 
+        30%, 
+        
+        #0FA 
+        30%, 
+        #0FA 
+        40%, 
+        
+      #FFF0
+        40%, 
+        #FFF0 
+        100%, 
+      ); 
+    }
+  
+    50% {
+      background-image: radial-gradient(closest-side, 
+        #FF0 
+        0, 
+        #FF0 
+        10%, 
+        
+        #FAF 
+        10%, 
+        #FAF 
+        20%, 
+        
+        #00F 
+        20%, 
+        #00F 
+        30%, 
+        
+        #0FA 
+        30%, 
+        #0FA 
+        40%, 
+        
+        #FAA 
+        40%,
+        #FAA 
+        50%, 
+        
+      #FFF0
+        50%, 
+        #FFF0 
+        100%, 
+      ); 
+    }
+  
+    60% {
+      background-image: radial-gradient(closest-side, 
+        #FF0 
+        0, 
+        #FF0 
+        10%, 
+        
+        #FAF 
+        10%, 
+        #FAF 
+        20%, 
+        
+        #00F 
+        20%, 
+        #00F 
+        30%, 
+        
+        #0FA 
+        30%, 
+        #0FA 
+        40%, 
+        
+        #FAA 
+        40%,
+        #FAA 
+        50%, 
+        
+        #0AF 
+        50%, 
+        #0AF 
+        60%, 
+        
+      #FFF0
+        60%, 
+        #FFF0 
+        100%, 
+      ); 
+    }
+  
+    70% {
+      background-image: radial-gradient(closest-side, 
+        #FF0 
+        0, 
+        #FF0 
+        10%, 
+        
+        #FAF 
+        10%, 
+        #FAF 
+        20%, 
+        
+        #00F 
+        20%, 
+        #00F 
+        30%, 
+        
+        #0FA 
+        30%, 
+        #0FA 
+        40%, 
+        
+        #FAA 
+        40%,
+        #FAA 
+        50%, 
+        
+        #0AF 
+        50%, 
+        #0AF 
+        60%, 
+        
+        #AF0 
+        60%, 
+        #AF0 
+        70%, 
+        
+      #FFF0
+        70%, 
+        #FFF0 
+        100%, 
+      ); 
+    }
+  
+    80% {
+      background-image: radial-gradient(closest-side, 
+        #FF0 
+        0, 
+        #FF0 
+        10%, 
+        
+        #FAF 
+        10%, 
+        #FAF 
+        20%, 
+        
+        #00F 
+        20%, 
+        #00F 
+        30%, 
+        
+        #0FA 
+        30%, 
+        #0FA 
+        40%, 
+        
+        #FAA 
+        40%,
+        #FAA 
+        50%, 
+        
+        #0AF 
+        50%, 
+        #0AF 
+        60%, 
+        
+        #AF0 
+        60%, 
+        #AF0 
+        70%, 
+        
+        #FA0 
+        70%, 
+        #FA0 
+        80%, 
+        
+      #FFF0
+        80%, 
+        #FFF0 
+        100%, 
+      ); 
+    }
+     
+    90% {
+      background-image: radial-gradient(closest-side, 
+        #FF0 
+        0, 
+        #FF0 
+        10%, 
+        
+        #FAF 
+        10%, 
+        #FAF 
+        20%, 
+        
+        #00F 
+        20%, 
+        #00F 
+        30%, 
+        
+        #0FA 
+        30%, 
+        #0FA 
+        40%, 
+        
+        #FAA 
+        40%,
+        #FAA 
+        50%, 
+        
+        #0AF 
+        50%, 
+        #0AF 
+        60%, 
+        
+        #AF0 
+        60%, 
+        #AF0 
+        70%, 
+        
+        #FA0 
+        70%, 
+        #FA0 
+        80%, 
+        
+        #0F0 
+        80%, 
+        #0F0 
+        90%, 
+        
+      #FFF0
+        90%, 
+        #FFF0 
+        100%, 
+       ); 
+     }
+  
+    100% {
+      background: radial-gradient(closest-side, 
+        #FF0 
+        0, 
+        #FF0 
+        10%, 
+        
+        #FAF 
+        10%, 
+        #FAF 
+        20%, 
+        
+        #00F 
+        20%, 
+        #00F 
+        30%, 
+        
+        #0FA 
+        30%, 
+        #0FA 
+        40%, 
+        
+        #FAA 
+        40%,
+        #FAA 
+        50%, 
+        
+        #0AF 
+        50%, 
+        #0AF 
+        60%, 
+        
+        #AF0 
+        60%, 
+        #AF0 
+        70%, 
+        
+        #FA0 
+        70%, 
+        #FA0 
+        80%, 
+        
+        #0F0 
+        80%, 
+        #0F0 
+        90%, 
+        
+        #A0F
+        90%, 
+        #A0F 
+        100%, 
+      ); 
+     }
+  }
