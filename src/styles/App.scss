@@ -66,10 +66,9 @@
 
   .project {
     position: relative; 
-    margin: 25px; 
+    margin: 25px 0; 
     height: 450px; 
     width: 450px; 
-  
     overflow: hidden; 
 
     border: var(--border-width) solid var(--border-color); 
