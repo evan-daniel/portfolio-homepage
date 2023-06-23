@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# evandaniel.com
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is source code for my home page, [evandaniel.com](https://evandaniel.com).
 
-## Available Scripts
+## Structure 
 
-In the project directory, you can run:
+The site is structured in two parts.  As a media artist, my practice focuses on educational technology.  Because traditional blog posts don't reflect the conceptual nature of the text, I opted to embed a PDF viewer.  To link to the different files, I created a simple landing page in React.  
 
-### `npm start`
+### React 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React was chosen to simplify deployment and standardize the development.  Because there is no routing, the React component of the site is relatively simple.  The largest benefit from using React in the structure of the site was in parameterizing the list of projects, which is defined in a single object.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### PDF Viewer 
 
-### `npm test`
+The individual PDFs were built in Latex.  Linking to static PDFs is possible on desktop, but mobile devices download each file.  I overcame this by leveraging Mozilla's PDFViewer.  Since the site is hosted on GitHub, they are opened with a 404 script that passes the path to an iframe.  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Design 
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The design of the site uses a visual identity built around a circle bisected by its diameter (or two semicircles or lunettes).  This is a reference to my artistic practice, which makes frequent use of the number π.  The portfolio items animate to emphasize their circularity.  Notably, to size correctly on different screens, I used a CSS technique of padding each element with a ratio, and using an outline instead of a border; without these techniques, the circles would become ellipses at high magnifications.  
