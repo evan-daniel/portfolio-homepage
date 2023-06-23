@@ -2,7 +2,7 @@
 // IMAGES 
 
 import number_games from './img/numbergames.svg'; 
-import lociai from './img/LociAi.png'; 
+import memory_galleries from './img/MemoryGalleries.png'; 
 import mnemonic_exercises from './img/EvanDaniel_MnemonicExercises.png'; 
 import feedback from './img/Feedback.png'; 
 // import encoding from './img/EvanDaniel_2022_PiCirclesMonochrome_Small.png'; 
@@ -19,12 +19,12 @@ import illustrations from './img/EvanDaniel_RazorsAndBalloons.png';
 
 const projects = [
     {
-        title: 'Loci AI', 
-        slug: 'lociai', 
-        pdf: 'https://evandaniel.com/loci_ai', 
-        link: 'https://lociai.com', 
+        title: 'Memory Galleries', 
+        slug: 'memorygalleries', 
+        pdf: 'https://evandaniel.com/memory_galleries', 
+        link: 'https://memorygalleries.com', 
         description: '3D game powered by AI that helps you memorize', 
-        img: { lociai }, 
+        img: { memory_galleries }, 
     }, 
     {
         title: 'Number Games', 
