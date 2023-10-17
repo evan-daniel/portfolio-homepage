@@ -1,56 +1,35 @@
 @use './defaults.scss' as def; 
 
-/* HERO VIDEO */
+/* NAV */
 
-.hero {
-  width: 100%; 
+.nav {
+  margin: 4ch 0 8ch 4ch; 
 
-  box-shadow: 0 0 50px #000C; 
-  border-bottom-left-radius: 50vw; 
-  border-bottom-right-radius: 50vw; 
-}
+  font-size: 1.2rem; 
 
-/* BIO */
-
-.bio {
-  @include def.fonts; 
-  
-  margin: 4rem 0; 
-
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  
-  .headline {
-    @include def.headline-font; 
+  .nav-item {
     
-    display: flex; 
-    flex-wrap: wrap; 
-
-    .word {
-      width: 50%; 
-    }
-
-    .word:nth-of-type(2n + 1) {
-      padding: 0 0.5ch 0 0; 
-      
-      text-align: right; 
-    }
+  }
+  
+  .brand, 
+  .portfolio {
+    transition: text-shadow 0.1666s; 
     
-    .word:nth-of-type(2n) {
-      padding: 0 0 0 0.5ch; 
-      
-      text-align: left; 
+    &:hover {
+      text-shadow: 0 0 15px #00f8;
     }
   }
   
-  .copy {
-    @include def.fonts; 
-    
-    max-width: 1024px; 
-    margin: 1.2rem 2.4rem 0; 
-    
-    font-size: 0.75rem; 
+  .brand {
+  }
+  
+  .portfolio {
+  }
+
+}
+.nav[data-path = 'edu'] {
+  .portfolio[data-href = 'edu'] {
+    text-decoration: underline;
   }
 }
 

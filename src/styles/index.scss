@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'FF Din';
-  src: local('vla'), url('../fonts/FFDIN-Bold.otf') format('opentype');
+  src: local('vla'), url('../fonts/FFDIN-Black.otf') format('opentype');
 }
 
 // GLOBAL 
@@ -34,4 +34,10 @@ a {
   text-decoration: none; 
   color: #00F; 
   font-weight: 900; 
+}
+
+// OVERRIDES 
+
+.pi {
+  font-family: serif; 
 }
