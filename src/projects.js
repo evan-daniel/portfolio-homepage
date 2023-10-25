@@ -5,15 +5,14 @@ import number_games from './img/numbergames.svg';
 import memory_galleries from './img/MemoryGalleries.png'; 
 import mnemonic_exercises from './img/EvanDaniel_MnemonicExercises.png'; 
 import feedback from './img/Feedback.png'; 
-// import encoding from './img/EvanDaniel_2022_PiCirclesMonochrome_Small.png'; 
 import encoding from './img/Encoding.png'; 
 import take_a_number from './img/TakeANumber_Silhouette.png'; 
 import pixels from './img/EvanDaniel_2014_Breakthrough_Small.png'; 
 import writingpi from './img/EvanDaniel_Cymbal.png'; 
 import memorizationtext from './img/evandaniel_2014_rememberingmichaelbrown.jpg'; 
-import mansplane from './img/EvanDaniel_Mansplaner.gif'; 
-import cubism from './img/EvanDaniel_ScreamingMonster_Medium.png'; 
-import illustrations from './img/EvanDaniel_RazorsAndBalloons.png'; 
+// import mansplane from './img/EvanDaniel_Mansplaner.gif'; 
+// import cubism from './img/EvanDaniel_ScreamingMonster_Medium.png'; 
+// import illustrations from './img/EvanDaniel_RazorsAndBalloons.png'; 
 
 // HOMEPAGE PROJECT SOURCE OF TRUTH 
 

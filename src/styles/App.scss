@@ -53,7 +53,7 @@
   justify-content: space-around; 
 
   --border-width: 11px; 
-  --border-color: #664D4D; 
+  --border-color: #333; 
 
   .project {
     width: 450px; 
@@ -68,7 +68,7 @@
       outline: var(--border-width) solid var(--border-color); 
       border-radius: 100vw; 
       transition: 0.333s box-shadow; 
-  
+
       display: flex; 
       flex-direction: column; 
       justify-content: flex-start; 
@@ -123,7 +123,7 @@
     
     > .aspect:hover {
       animation: 0.333s rainbow 2 alternate; 
-      box-shadow: 0 0 25px #655; 
+      box-shadow: 0 0 25px #333; 
     }
   }
 }

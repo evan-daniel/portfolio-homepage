@@ -1,28 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.03c3ccaf.css",
-    "main.js": "/static/js/main.59e2d612.js",
+    "main.css": "/static/css/main.4dc076d5.css",
+    "main.js": "/static/js/main.49da1734.js",
     "static/js/787.8702e53f.chunk.js": "/static/js/787.8702e53f.chunk.js",
     "static/media/TakeANumber.gif": "/static/media/TakeANumber.bf0fd6070e216fbc1fe2.gif",
     "static/media/Encoding.png": "/static/media/Encoding.d7f9e39a93a1f0fae433.png",
-    "static/media/EvanDaniel_RazorsAndBalloons.png": "/static/media/EvanDaniel_RazorsAndBalloons.dae43ce32596b8d62924.png",
     "static/media/EvanDaniel_Cymbal.png": "/static/media/EvanDaniel_Cymbal.29095a068bd02cb14eb9.png",
-    "static/media/EvanDaniel_ScreamingMonster_Medium.png": "/static/media/EvanDaniel_ScreamingMonster_Medium.6a84237c140ae6fc0bbb.png",
     "static/media/MemoryGalleries.png": "/static/media/MemoryGalleries.741ce725862ef022d011.png",
     "static/media/Feedback.png": "/static/media/Feedback.db0097c26841cf61c72b.png",
     "static/media/evandaniel_2014_rememberingmichaelbrown.jpg": "/static/media/evandaniel_2014_rememberingmichaelbrown.3fd792425e7fb52284bc.jpg",
     "static/media/EvanDaniel_2014_Breakthrough_Small.png": "/static/media/EvanDaniel_2014_Breakthrough_Small.2c81b84400c55088e17d.png",
     "static/media/FFDIN-Black.otf": "/static/media/FFDIN-Black.2c3a72f75eea77ffec0b.otf",
     "static/media/TakeANumber_Silhouette.png": "/static/media/TakeANumber_Silhouette.a7d7be7f73cdd407e349.png",
-    "static/media/EvanDaniel_Mansplaner.gif": "/static/media/EvanDaniel_Mansplaner.84cebdd4eb94c764a25f.gif",
     "static/media/numbergames.svg": "/static/media/numbergames.96537e39328e27ce75bc937a6623839f.svg",
     "index.html": "/index.html",
-    "main.03c3ccaf.css.map": "/static/css/main.03c3ccaf.css.map",
-    "main.59e2d612.js.map": "/static/js/main.59e2d612.js.map",
+    "main.4dc076d5.css.map": "/static/css/main.4dc076d5.css.map",
+    "main.49da1734.js.map": "/static/js/main.49da1734.js.map",
     "787.8702e53f.chunk.js.map": "/static/js/787.8702e53f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03c3ccaf.css",
-    "static/js/main.59e2d612.js"
+    "static/css/main.4dc076d5.css",
+    "static/js/main.49da1734.js"
   ]
 }
