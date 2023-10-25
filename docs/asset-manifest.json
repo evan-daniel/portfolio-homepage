@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.53c2a3d0.css",
+    "main.css": "/static/css/main.66b12384.css",
     "main.js": "/static/js/main.fd6263c2.js",
     "static/js/787.8702e53f.chunk.js": "/static/js/787.8702e53f.chunk.js",
     "static/media/TakeANumber.gif": "/static/media/TakeANumber.bf0fd6070e216fbc1fe2.gif",
@@ -12,16 +12,17 @@
     "static/media/Feedback.png": "/static/media/Feedback.db0097c26841cf61c72b.png",
     "static/media/evandaniel_2014_rememberingmichaelbrown.jpg": "/static/media/evandaniel_2014_rememberingmichaelbrown.3fd792425e7fb52284bc.jpg",
     "static/media/EvanDaniel_2014_Breakthrough_Small.png": "/static/media/EvanDaniel_2014_Breakthrough_Small.2c81b84400c55088e17d.png",
+    "static/media/FFDIN-Black.otf": "/static/media/FFDIN-Black.2c3a72f75eea77ffec0b.otf",
     "static/media/TakeANumber_Silhouette.png": "/static/media/TakeANumber_Silhouette.a7d7be7f73cdd407e349.png",
     "static/media/EvanDaniel_Mansplaner.gif": "/static/media/EvanDaniel_Mansplaner.84cebdd4eb94c764a25f.gif",
     "static/media/numbergames.svg": "/static/media/numbergames.96537e39328e27ce75bc937a6623839f.svg",
     "index.html": "/index.html",
-    "main.53c2a3d0.css.map": "/static/css/main.53c2a3d0.css.map",
+    "main.66b12384.css.map": "/static/css/main.66b12384.css.map",
     "main.fd6263c2.js.map": "/static/js/main.fd6263c2.js.map",
     "787.8702e53f.chunk.js.map": "/static/js/787.8702e53f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53c2a3d0.css",
+    "static/css/main.66b12384.css",
     "static/js/main.fd6263c2.js"
   ]
 }
