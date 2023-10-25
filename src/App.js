@@ -13,26 +13,17 @@ function App() {
       <img className="hero" src={ hero } />
       
       <div className="bio">
-        {/* <div className="headline">
-          <span className="word">evan</span>
-          <span className="word">daniel</span>
-          <span className="word">recites</span>
-          <span className="word">π</span>
-          <span className="word">from</span>
-          <span className="word">memory</span>
-        </div> */}
-
         <div className="headline">
-          <span className="word">evan</span>
-          <span className="word">daniel</span>
-          <span className="word">explores</span>
-          <span className="word">knowledge</span>
-          <span className="word">through</span>
-          <span className="word">media</span>
+          evan daniel: <br />
+          art about reciting π
         </div>
-        
+
         <div className="copy">
-          Evan Daniel is a media artist who specializes in educational technology, data visualization, and game and interaction design.  He has degrees in Digital Media and Painting from RISD, where his MFA thesis research focused on the philosophical and psychological interpretation of numerical knowledge.  His work often leverages tools related to web, game, and software development; design, media, and video; and fine art.  His practice is informed by his memorization of the number π to ten thousand digits, a skill that he has continued to rehearse for over a decade.  When π is present in his work, it is always recited from memory.  His work has been featured in The Guardian, Core77, and on Intel's Facebook page.  
+          The number π begins "3.14159265358979…" and never becomes a repeating pattern.  Many people have used it to test their memory; I use the memorization of π for art and design.  
+          
+          <br /><br />
+
+          In the projects below I recite π from memory by painting them; develop interactive environments to test myself; and propose novel apps to help people memorize and understand numbers.  
         </div>
       </div>
 
@@ -52,10 +43,12 @@ function App() {
       <div className="footer">
         <div className="contact">
           <div className="headline">
-            Contact
+            Other Work
           </div>
           <div className="email">
-            evan@evandaniel.com
+            <a href="https://evandaniel.com">
+              evandaniel.com
+            </a>
           </div>
           </div>
           <div className="copyright">
