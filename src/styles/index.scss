@@ -1,6 +1,9 @@
-/* FONTS */
+// FONTS 
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap');
+@font-face {
+  font-family: 'FF Din';
+  src: local('vla'), url('../fonts/FFDIN-Black.otf') format('opentype');
+}
 
 /* GLOBAL */
 
@@ -23,9 +26,7 @@
 }
 
 body {
-  font-family: 'Futura', sans-serif; 
-  font-family: 'Menlo', 'Monaco', 'Courier New', monospace; 
-  font-family: 'DM Mono', 'Menlo', 'Monaco', 'Courier New', monospace; 
+  font-family: 'FF Din', 'Helvetica', sans-serif; 
 }
 
 a {
